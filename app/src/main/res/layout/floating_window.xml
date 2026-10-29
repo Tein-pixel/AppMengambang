@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panel_bg"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:id="@+id/windowHeader"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#172640"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp">
+
+        <TextView
+            android:id="@+id/windowAppName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="App"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnMaximize"
+            android:layout_width="32dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="□"
+            android:textColor="#D9E6FF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btnMinimize"
+            android:layout_width="32dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="−"
+            android:textColor="#D9E6FF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="×"
+            android:textColor="#FF9DAD"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="14dp"
+        android:paddingTop="13dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JENDELA APLIKASI"
+            android:textColor="#71A6FF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:id="@+id/windowMessage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Memulai aplikasi…"
+            android:textColor="#D5E1F7"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/launchAppButton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/primary_bg"
+            android:text="Buka aplikasi lagi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="end|center_vertical"
+        android:paddingEnd="4dp"
+        android:paddingBottom="3dp">
+
+        <View
+            android:id="@+id/resizeHandle"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/resize_handle"
+            android:contentDescription="Tarik untuk mengubah ukuran" />
+    </FrameLayout>
+</LinearLayout>
