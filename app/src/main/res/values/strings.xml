@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Floating Apps</string>
+    <string name="search_hint">Cari aplikasi terpasang…</string>
+    <string name="overlay_permission">Aktifkan izin overlay</string>
+</resources>
